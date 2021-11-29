@@ -1,0 +1,69 @@
+.home__section--banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+    url("/images/home/banner1.png") center top no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  position: relative;
+}
+
+.home__banner--content {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+}
+
+.home__banner--content h1 {
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-color);
+}
+
+/*...........Home-page second section.....................*/
+.home__section--card {
+  width: 900px;
+  max-width: 100%;
+  margin: 60px auto;
+}
+.home__section--card h2 {
+  text-align: center;
+  color: var(--header-button-color);
+}
+.section--card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 20px;
+}
+.home__section--card__wrapper {
+  box-shadow: var(--box-shadow-small);
+  padding: 40px;
+}
+.home__section--card__wrapper p {
+  padding: auto 40px;
+}
+/*...........Home-page third section.....................*/
+
+.home__section--imag img {
+  max-width: 100%;
+  height: 70vh;
+
+  background-size: cover;
+}
+
+/*...........Home-page fourth section.....................*/
+.home__section--news {
+  width: 1000px;
+  margin: 60px auto;
+}
+.home__section--news h2,
+h3 {
+  text-align: center;
+  color: var(--header-button-color);
+}

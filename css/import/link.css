@@ -1,0 +1,83 @@
+a {
+  font-size: 25px;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+a:hover,
+.btn:hover {
+  cursor: pointer;
+}
+
+/*..........Button.............................*/
+
+.button {
+  cursor: pointer;
+  border: 0;
+  background: var(--header-button-color);
+  color: var(--neutral-color);
+  font-size: 18px;
+  font-family: var(--text-paragraph);
+  padding: 5px 40px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  z-index: -1;
+  transition: transform 250ms ease-in;
+}
+
+.button-one::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.button-one:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/*...........NAVIGATION__HOVER.............*/
+.active,
+nav ul li a {
+  position: relative;
+}
+.active,
+nav ul li a:hover {
+  color: var(--header-button-color);
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  background: var(--header-button-color);
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/*...............Tablet screen...............*/
+
+@media (min-width: 600px) {
+  .home__banner--content h1 {
+    font-size: 23px;
+  }
+}

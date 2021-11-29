@@ -1,0 +1,12 @@
+:root {
+  --text-paragraph: "orbitron";
+  --text-heading: "Genos";
+  --neutral-color: #fff;
+  --header-button-color: #e57200;
+  --bg-color: #f2f2f2;
+  --box-shadow-small: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --font-color: #0e151e;
+  --paragraph-text-color: #777;
+  --font-weight-bold: 600px;
+  --mobile-nav-color: #f2f4f5;
+}
