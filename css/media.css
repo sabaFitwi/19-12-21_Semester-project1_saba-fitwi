@@ -33,17 +33,56 @@
   }
 }
 
-/*....................HOME-MAIN....................................*/
-
-/*...........Home__BANNER...........*/
 @media (min-width: 600px) {
+  /*..........HOME..............*/
+  /*...........Banner...........*/
   .home__banner--content h1 {
     font-size: 25px;
+  }
+  /*...........card...........*/
+  .section__card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+  }
+  .news__card--wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tablet__explore--kids--wrapper,
+  .explore__teacher--wrapper,
+  .explore__research--wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  /*......Exhibition..................*/
+  .exhibition__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .reverse__wrapper .order__reverse1 {
+    order: 1;
+  }
+  .reverse__wrapper .order__reverse2 {
+    order: 2;
   }
 }
 
 @media (min-width: 800px) {
+  /*......HOME..................*/
+
   .home__banner--content h1 {
     font-size: 30px;
+  }
+
+  /*......Explore..................*/
+
+  .explore__kids--wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tablet_hidden--explore {
+    display: grid;
+  }
+  /*......Contact..................*/
+  .contact-page_wrapper {
+    display: flex;
+    flex-direction: row;
   }
 }

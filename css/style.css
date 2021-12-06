@@ -9,10 +9,10 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  font-family: "Genos", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h1 {
@@ -22,8 +22,11 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   font-family: "genos", sans-serif;
+  text-transform: uppercase;
 }
 p {
   font-family: sans-serif, Helvetica;

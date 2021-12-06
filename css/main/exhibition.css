@@ -1,0 +1,39 @@
+.exhibition__banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%),
+    url(/images/exhibition/banner.jpg) center center no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  position: relative;
+}
+.banner--content {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+}
+.banner--content h1 {
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-color);
+}
+
+.exhibition__wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.exhibition__wrapper h3 {
+  color: var(--header-button-color);
+}
+.reverse__wrapper .order__reverse1 {
+  order: 2;
+}
+.reverse__wrapper .order__reverse2 {
+  order: 1;
+}

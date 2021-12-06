@@ -1,0 +1,65 @@
+body {
+  background: url(/images/contact/33.png) bottom left no-repeat;
+  background-size: cover;
+  height: auto;
+  max-width: 100%;
+}
+header {
+  background: var(--neutral-color);
+}
+input,
+textarea,
+select {
+  border: 1px solid var(--gray-background);
+  margin: 5px 10px 15px 0;
+  padding: 5px;
+  max-width: 400px;
+}
+textarea {
+  min-height: 100px;
+}
+.contact {
+  background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%),
+    linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%),
+    linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%),
+    linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
+  margin: 20px auto;
+  opacity: 0.9;
+  max-width: 1100px;
+}
+.contact h1 {
+  color: var(--header-button-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+label,
+h2,
+p {
+  text-transform: lowercase;
+  color: var(--neutral-color);
+}
+.contact-page_wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  box-shadow: var(--box-shadow-large);
+}
+section.contact-page_detail {
+  display: block;
+  padding: 60px 30px;
+  background: var(--primary-color);
+  border: 1px solid #f1f1f1;
+}
+.contact-icon {
+  padding-right: 20px;
+}
+.contact-page_form > * {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 30px;
+  background: var(--product-color);
+}
+span.important {
+  color: #ff0000;
+}
