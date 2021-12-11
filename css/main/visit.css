@@ -1,25 +1,57 @@
-.visit__banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%),
-    url(/images/visit/banner.jpg) center center no-repeat;
+.banner {
+  background: url(/images/visit/banner.jpg) center center no-repeat;
   background-size: cover;
-  min-height: 70vh;
-  position: relative;
 }
-.banner--content {
-  position: absolute;
-  text-align: center;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 200px;
+.banner__content--background {
+  background: #000;
+  opacity: 0.7;
+  padding: 10px;
 }
-.banner--content h1 {
-  font-size: 20px;
-  font-weight: 300;
+
+.visit {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.visit__content--wrap {
   display: flex;
   flex-direction: column;
-  color: var(--neutral-color);
+  align-items: flex-start;
+  padding: 0 20px;
+}
+.visit__content--wrap p {
+  margin: 0;
+  padding: 3px 0;
+}
+.visit__content--wrap img {
+  height: 100px;
+  margin-bottom: 25px;
 }
 .hour {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+.hours {
+  display: flex;
+  justify-content: space-between;
+}
+
+.free {
+  font-weight: bolder;
+}
+
+p.visit__title {
+  text-transform: uppercase;
+}
+.visit__title {
+  text-align: start;
+  color: var(--header-button-color);
+  margin-top: 10px;
+}
+.location span {
+  display: block;
+  color: #777;
 }

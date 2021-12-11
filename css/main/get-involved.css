@@ -1,29 +1,22 @@
-.involvement__banner {
+.banner {
   background: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%),
     url(/images/get-involved/banner.jpg) center center no-repeat;
   background-size: cover;
   min-height: 70vh;
   position: relative;
 }
-.banner--content {
-  position: absolute;
-  text-align: center;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 200px;
-}
-.banner--content h1 {
-  font-size: 20px;
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  color: var(--neutral-color);
-}
+
 .involvement__wrapper {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   max-width: 1000px;
   margin: 80px auto;
+}
+.support img {
+  height: 100px;
+}
+p.support__title {
+  color: var(--header-button-color);
+  text-transform: uppercase;
 }

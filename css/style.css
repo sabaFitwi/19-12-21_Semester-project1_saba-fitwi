@@ -1,5 +1,6 @@
 @import url(import/link.css);
 @import url(import/variable.css);
+@import url(import/header.css);
 @import url(import/footer.css);
 
 body {
@@ -9,15 +10,15 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 h1 {
   text-align: center;
-  font-family: "Orbitron", sans-serif;
+  font-family: "genos", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--header-color);
   text-transform: uppercase;
 }
@@ -25,13 +26,13 @@ h1 {
 h2,
 h3,
 h4 {
-  font-family: "genos", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
 }
 p {
-  font-family: sans-serif, Helvetica;
   color: var(--paragraph-text-color);
   font-weight: 300px;
+  line-height: 1.5;
 }
 header,
 footer {
@@ -45,21 +46,22 @@ img {
   object-fit: contain;
 }
 
-/*---------Mobile screens--------------------------*/
+/*---------Mobile screens----------------------*/
 
-@media (min-width: 400px) {
-  p {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 25px;
-  }
+h2 {
+  font-size: 18px;
+}
+h1 {
+  font-size: 25px;
 }
 /*---------Tablet screens--------------------------*/
 
 @media (min-width: 600px) {
   p {
-    font-size: 16px;
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 20px;
   }
 
   h1 {
@@ -70,45 +72,12 @@ img {
 
 @media (min-width: 800px) {
   p {
-    font-size: 18px;
+    font-size: 14px;
   }
-
+  h2 {
+    font-size: 25px;
+  }
   h1 {
     font-size: 40px;
   }
-}
-/*............HEADER..............................*/
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.logo img {
-  max-height: 100px;
-}
-
-nav {
-  margin-left: 25px;
-  display: none;
-  position: fixed;
-  top: 45px;
-  z-index: 1000;
-  right: 0px;
-}
-
-nav ul {
-  padding: 0px;
-}
-
-nav li {
-  display: block;
-  padding: 20px 30px;
-}
-
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
 }

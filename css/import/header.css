@@ -1,0 +1,71 @@
+/*............HEADER..............................*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo img {
+  height: 70px;
+}
+
+nav {
+  margin-left: 25px;
+  display: none;
+  position: fixed;
+  top: 45px;
+  z-index: 1000;
+  right: 10;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
+nav li a {
+  font-size: 16px;
+}
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+/*........Banner......*/
+.banner {
+  background: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.banner__content {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+}
+.banner__content h1 {
+  font-size: 45px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-color);
+  margin: 0;
+}
+.banner__content p {
+  color: var(--neutral-color);
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.banner__content--background {
+  background: #000;
+  opacity: 0.7;
+  padding: 10px;
+}

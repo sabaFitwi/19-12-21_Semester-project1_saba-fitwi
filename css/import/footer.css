@@ -1,15 +1,21 @@
 footer {
   display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background: url(/images/footer.png);
   min-height: 30vh;
   width: 100%;
   color: var(--neutral-color);
 }
+footer p {
+  color: var(--neutral-color);
+  font-size: 14px;
+  letter-spacing: 1.2;
+}
 .fa-customize {
-  font-size: 25px;
+  font-size: 30px;
   color: var(--neutral-color);
 }
 .footer__contact span {

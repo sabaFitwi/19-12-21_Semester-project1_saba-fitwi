@@ -1,61 +1,63 @@
-/*...............HEADER...............................*/
-
 @media (min-width: 600px) {
-  header {
-    justify-content: start;
-  }
-  nav {
-    display: block;
-    position: static;
+  .logo img {
+    height: 80px;
   }
 
-  nav li {
-    display: inline-block;
-    padding: 10px;
-  }
-  nav a {
-    font-size: 19px;
-  }
-
-  header label {
-    display: none;
-  }
-}
-@media (min-width: 800px) {
-  header {
-    justify-content: space-around;
-  }
-  nav li {
-    padding: 10px;
-  }
-  nav a {
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 600px) {
-  /*..........HOME..............*/
-  /*...........Banner...........*/
-  .home__banner--content h1 {
-    font-size: 25px;
-  }
-  /*...........card...........*/
+  /*...........card.........*/
   .section__card-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    flex-direction: row;
+  }
+  .home__card__wrapper {
+    box-shadow: none;
   }
   .news__card--wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .tablet__explore--kids--wrapper,
   .explore__teacher--wrapper,
   .explore__research--wrapper {
     grid-template-columns: 1fr 1fr;
   }
-  /*......Exhibition..................*/
+  /*......Exhibition........*/
+}
+
+@media (min-width: 800px) {
+  header {
+    justify-content: start;
+    padding: 10px;
+  }
+  header label {
+    display: none;
+  }
+  nav {
+    display: block;
+    position: static;
+  }
+  nav li {
+    display: inline-block;
+    padding: 7px;
+  }
+  nav a {
+    font-size: 22px;
+  }
+  .banner__content h1 {
+    font-size: 60px;
+  }
+  /*......Explore..................*/
+  .home__card {
+    max-width: 1000px;
+    margin: 60px auto;
+  }
+  .explore__kids--wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tablet_hidden--explore {
+    display: grid;
+  }
+  /*......Exibishion....*/
   .exhibition__wrapper {
     grid-template-columns: 1fr 1fr;
+    padding: 20px;
   }
   .reverse__wrapper .order__reverse1 {
     order: 1;
@@ -63,22 +65,14 @@
   .reverse__wrapper .order__reverse2 {
     order: 2;
   }
-}
-
-@media (min-width: 800px) {
-  /*......HOME..................*/
-
-  .home__banner--content h1 {
-    font-size: 30px;
-  }
-
-  /*......Explore..................*/
-
-  .explore__kids--wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .tablet_hidden--explore {
+  /*......visit..................*/
+  .visit {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+    padding: 50px;
   }
   /*......Contact..................*/
   .contact-page_wrapper {

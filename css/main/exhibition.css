@@ -1,24 +1,6 @@
-.exhibition__banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%),
-    url(/images/exhibition/banner.jpg) center center no-repeat;
+.banner {
+  background: url(/images/exhibition/banner.jpg) center center no-repeat;
   background-size: cover;
-  min-height: 70vh;
-  position: relative;
-}
-.banner--content {
-  position: absolute;
-  text-align: center;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 200px;
-}
-.banner--content h1 {
-  font-size: 20px;
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  color: var(--neutral-color);
 }
 
 .exhibition__wrapper {
@@ -27,13 +9,82 @@
   gap: 20px;
   max-width: 1000px;
   margin: 20px auto;
+  box-shadow: var(--box-shadow-small);
+  padding: 0 20px;
 }
 .exhibition__wrapper h3 {
   color: var(--header-button-color);
+  margin: 0;
 }
 .reverse__wrapper .order__reverse1 {
   order: 2;
 }
 .reverse__wrapper .order__reverse2 {
   order: 1;
+}
+.card {
+  padding: 32px;
+  background-image: url(/images/exhibition/18.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--neutal-color);
+  text-align: left;
+  height: 70vh;
+}
+
+.card__title {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-bottom: 16px;
+  padding-left: 10px;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -32px;
+  bottom: -4px;
+  width: calc(100% + 64px);
+  background: var(--header-button-color);
+  z-index: -1;
+  transform: scaleX(0.075);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+
+.card:hover .card__title::after {
+  transform: scaleX(1);
+}
+
+.card__body {
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  margin: 0;
+  transition: color 150ms 350ms;
+  width: 70%;
+}
+
+.card__body::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  bottom: -12px;
+  left: -12px;
+  right: -12px;
+  background: white;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: transform 250ms ease-in 250ms;
+  transform-origin: top;
+}
+
+.card:hover .card__body {
+  color: #333;
+}
+
+.card:hover .card__body::after {
+  transform: scaleY(1);
 }
