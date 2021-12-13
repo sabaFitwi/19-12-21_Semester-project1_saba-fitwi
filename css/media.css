@@ -3,22 +3,22 @@
     height: 80px;
   }
 
-  /*...........card.........*/
-  .section__card-wrapper {
-    flex-direction: row;
-  }
+  /*...........explore.........*/
+
   .home__card__wrapper {
     box-shadow: none;
   }
-  .news__card--wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
   .tablet__explore--kids--wrapper,
   .explore__teacher--wrapper,
   .explore__research--wrapper {
     grid-template-columns: 1fr 1fr;
   }
-  /*......Exhibition........*/
+  /*......visit........*/
+  .visit__row1,
+  .visit__row2 {
+    padding: 0 10%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -36,14 +36,19 @@
   nav li {
     display: inline-block;
     padding: 7px;
+    border-bottom: none;
   }
-  nav a {
-    font-size: 22px;
-  }
+
   .banner__content h1 {
     font-size: 60px;
   }
   /*......Explore..................*/
+  .section__card-wrapper {
+    flex-direction: row;
+  }
+  .news__card--wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .home__card {
     max-width: 1000px;
     margin: 60px auto;
@@ -66,13 +71,21 @@
     order: 2;
   }
   /*......visit..................*/
-  .visit {
-    display: grid;
+  .visit__row1,
+  .visit__row2 {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .visit__row1 {
+    grid-template-columns: auto 1fr 1fr;
+    padding-top: 50px;
+  }
+  .visit__row2 {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    align-items: start;
-    padding: 50px;
+    padding-bottom: 50px;
+  }
+  .visit__content--wrap {
+    align-items: flex-start;
   }
   /*......Contact..................*/
   .contact-page_wrapper {

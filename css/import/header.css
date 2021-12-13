@@ -14,7 +14,10 @@ nav {
   position: fixed;
   top: 45px;
   z-index: 1000;
-  right: 10;
+  right: 0;
+  left: 50%;
+  background: var(--neutral-color);
+  text-align: ter;
 }
 
 nav ul {
@@ -24,10 +27,12 @@ nav ul {
 nav li {
   display: block;
   padding: 20px 30px;
+  border-bottom: 1px dashed #777;
 }
 nav li a {
   font-size: 16px;
 }
+
 #hamburger-menu {
   display: none;
 }
@@ -65,7 +70,7 @@ nav li a {
   margin-bottom: 20px;
 }
 .banner__content--background {
-  background: #000;
-  opacity: 0.7;
+  background: var(--linear-gradient-banner);
+
   padding: 10px;
 }

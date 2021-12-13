@@ -1,6 +1,6 @@
 /*...........Home-page first section.....................*/
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+  background: var(--linear-gradient-banner),
     url(/images/home/banner1.png) right top;
 }
 
@@ -45,6 +45,7 @@ h3 {
   text-align: center;
   color: var(--header-button-color);
 }
+
 #parallax {
   background: linear-gradient(
       to bottom,
@@ -63,6 +64,7 @@ h3 {
   grid-template-rows: 1fr;
   gap: 10px;
   align-items: start;
+  padding: 0 10%;
 }
 p.news__date {
   font-weight: bold;

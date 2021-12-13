@@ -16,7 +16,7 @@
 .support img {
   height: 100px;
 }
-p.support__title {
+h2.support__title {
   color: var(--header-button-color);
   text-transform: uppercase;
 }

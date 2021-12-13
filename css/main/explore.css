@@ -17,7 +17,7 @@
 .explore__kids--wrapper,
 .explore__teacher--wrapper,
 .explore__research--wrapper p {
-  padding: 0 40px;
+  padding: 0 30px;
   text-align: justify;
 }
 .explore__kids--wrapper,
@@ -29,6 +29,9 @@
   margin: 0px auto;
   gap: 10px;
   padding: 40px;
+}
+h2.explor__h2 {
+  margin: 70px 0 0 0;
 }
 .tablet_hidden--explore {
   display: none;
@@ -43,7 +46,7 @@ p {
 #parallax1,
 #parallax2,
 #parallax3 {
-  min-height: 100vh;
+  min-height: 70vh;
   background-size: cover;
 }
 
