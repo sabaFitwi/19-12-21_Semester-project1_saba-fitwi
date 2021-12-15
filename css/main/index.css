@@ -1,7 +1,7 @@
 /*...........Home-page first section.....................*/
 .banner {
   background: var(--linear-gradient-banner),
-    url(/images/home/banner1.png) right top;
+    url(/images/home/banner1.png) center center;
 }
 
 /*...........card.....................*/

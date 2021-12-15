@@ -52,7 +52,7 @@ p {
 
 #parallax1 {
   background: var(--linear-gradient-parallex),
-    url(/images/explore/background-sec1.png) center fixed no-repeat;
+    url(/images/explore/background-sec1.png) center right fixed no-repeat;
 }
 
 #parallax2 {
