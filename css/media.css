@@ -2,7 +2,13 @@
   .logo img {
     height: 80px;
   }
-
+  /*.......banners......*/
+  .banner__content h1 {
+    font-size: 45px;
+  }
+  .banner__content p {
+    font-size: 14px;
+  }
   /*...........explore.........*/
 
   .home__card__wrapper {
@@ -36,7 +42,10 @@
   }
 
   .banner__content h1 {
-    font-size: 60px;
+    font-size: 50px;
+  }
+  .banner__content p {
+    font-size: 16px;
   }
   /*......Explore..................*/
   .section__card-wrapper {
@@ -66,6 +75,13 @@
   .reverse__wrapper .order__reverse2 {
     order: 2;
   }
+  h3.card__title {
+    font-size: 60px;
+  }
+  .card p {
+    font-size: 16px;
+  }
+
   /*......visit..................*/
   .visit__row1,
   .visit__row2 {
@@ -83,6 +99,17 @@
   .visit__content--wrap {
     align-items: center;
   }
+  /*....Get-involved.....*/
+  .involvement__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 1000px;
+    padding: 0 100px;
+  }
+  .support {
+    padding: 0 10px;
+  }
   /*......Contact..................*/
   .contact-page_wrapper {
     display: flex;
@@ -93,16 +120,5 @@
   }
   .contact h1 {
     font-size: 60px;
-  }
-  /*....get-involved.....*/
-  .involvement__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-width: 1000px;
-    padding: 0 100px;
-  }
-  .support {
-    padding: 0 10px;
   }
 }

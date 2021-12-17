@@ -5,13 +5,11 @@ header {
 input,
 textarea,
 select {
-  border: 1px solid var(--gray-background);
+  border: 1px solid #cecece;
   margin: 5px 10px 15px 0;
   padding: 5px;
   min-width: 300px;
   border-radius: 10px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 textarea {
   min-height: 100px;
@@ -28,7 +26,6 @@ textarea {
 label,
 h2,
 p {
-  text-transform: capitalize;
   color: var(--paragraph-text-color);
   font-family: var(--text-paragraph);
   font-weight: 700;

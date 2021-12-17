@@ -39,7 +39,7 @@ h2.explor__h2 {
 
 p {
   color: var(--paragraph-text-color);
-  padding: 0 40px;
+  padding: 0;
 }
 
 #parallax1,

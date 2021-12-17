@@ -35,12 +35,11 @@
 .card p {
   color: white;
   text-transform: capitalize;
-  font-size: 18px;
-  width: 500px;
+  font-size: 12px;
 }
 
 h3.card__title {
-  font-size: 60px;
+  font-size: 30px;
   color: var(--neutral-color);
   margin-bottom: 0;
 }
