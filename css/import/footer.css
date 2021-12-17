@@ -12,7 +12,7 @@ footer {
 footer p {
   color: var(--neutral-color);
   font-size: 14px;
-  letter-spacing: 1.2;
+  text-align: left;
 }
 .fa-customize {
   font-size: 30px;

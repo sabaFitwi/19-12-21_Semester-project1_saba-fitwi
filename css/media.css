@@ -15,10 +15,6 @@
     grid-template-columns: 1fr 1fr;
   }
   /*......visit........*/
-  .visit__row1,
-  .visit__row2 {
-    padding: 0 10%;
-  }
 }
 
 @media (min-width: 800px) {
@@ -85,11 +81,28 @@
     padding-bottom: 50px;
   }
   .visit__content--wrap {
-    align-items: flex-start;
+    align-items: center;
   }
   /*......Contact..................*/
   .contact-page_wrapper {
     display: flex;
     flex-direction: row;
+  }
+  section.contact-page_detail {
+    padding: 0 30px;
+  }
+  .contact h1 {
+    font-size: 60px;
+  }
+  /*....get-involved.....*/
+  .involvement__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 1000px;
+    padding: 0 100px;
+  }
+  .support {
+    padding: 0 10px;
   }
 }

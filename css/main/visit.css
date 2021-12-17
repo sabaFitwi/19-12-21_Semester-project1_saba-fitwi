@@ -27,6 +27,16 @@
   height: 70px;
   margin-bottom: 25px;
 }
+.visit__row1,
+.visit__row2 {
+  padding: 0 10%;
+}
+.visit__row1 {
+  padding-top: 10%;
+}
+.visit__row2 {
+  padding: 10%;
+}
 
 .hour__wrap {
   display: flex;
@@ -47,10 +57,6 @@
   display: block;
   color: #777;
 }
-.visit__location--map {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.visit__location--map img {
-  width: 1100px;
+.visit__location--map iframe {
+  max-width: 500px;
 }

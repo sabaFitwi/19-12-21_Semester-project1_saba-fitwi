@@ -34,6 +34,7 @@ p {
   color: var(--paragraph-text-color);
   font-weight: 300px;
   line-height: 1.5;
+  text-align: justify;
 }
 header,
 footer {

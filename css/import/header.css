@@ -17,7 +17,6 @@ nav {
   right: 0;
   left: 50%;
   background: var(--neutral-color);
-  text-align: ter;
 }
 
 nav ul {
@@ -53,7 +52,6 @@ nav li a {
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 200px;
 }
 .banner__content h1 {
   font-size: 45px;
@@ -68,9 +66,8 @@ nav li a {
   font-size: 18px;
   margin: 0;
   margin-bottom: 20px;
-}
-.banner__content--background {
-  background: var(--linear-gradient-banner);
-
-  padding: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  text-justify: center;
+  padding: 0;
 }

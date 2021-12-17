@@ -1,6 +1,6 @@
 /*..........explore-page banner section.....................*/
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%),
+  background: var(--linear-gradient-banner),
     url(/images/explore/explore-banner.png) center;
 }
 
@@ -42,7 +42,6 @@ p {
   padding: 0 40px;
 }
 
-/*.......Researcher.........*/
 #parallax1,
 #parallax2,
 #parallax3 {

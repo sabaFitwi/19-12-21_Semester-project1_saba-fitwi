@@ -1,11 +1,6 @@
-body {
-  background: url(/images/contact/33.png) bottom left no-repeat;
-  background-size: cover;
-  height: auto;
-  max-width: 100%;
-}
 header {
   background: var(--neutral-color);
+  box-shadow: var(--box-shadow-small);
 }
 input,
 textarea,
@@ -13,55 +8,56 @@ select {
   border: 1px solid var(--gray-background);
   margin: 5px 10px 15px 0;
   padding: 5px;
-  max-width: 600px;
+  min-width: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 textarea {
   min-height: 100px;
 }
 .contact {
-  background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%),
-    linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%),
-    linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%),
-    linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
   margin: 20px auto;
-  opacity: 0.9;
 }
 .contact h1 {
   color: var(--header-button-color);
   text-align: center;
-  margin-bottom: 50px;
+  margin: 20px 0;
+  font-size: 45px;
 }
 label,
 h2,
 p {
   text-transform: capitalize;
-  color: var(--neutral-color);
+  color: var(--paragraph-text-color);
   font-family: var(--text-paragraph);
+  font-weight: 700;
 }
-.nav-container label {
-  color: var(--primary-color);
-}
+
 .contact-page_wrapper {
   display: flex;
   flex-direction: column-reverse;
   flex: 1;
-  box-shadow: var(--box-shadow-large);
+  background: var(--neutral-color);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow-small);
+  margin-bottom: 50px;
 }
 section.contact-page_detail {
   display: block;
-  padding: 60px 30px;
-  background: var(--primary-color);
-  border-right: 1px solid #f1f1f1;
+  padding: 30px 10px;
 }
 .contact-icon {
   padding-right: 20px;
+}
+section.contact-page_form {
+  box-shadow: var(--box-shadow-small);
 }
 .contact-page_form > * {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 30px;
-  background: var(--product-color);
 }
 span.important {
   color: #ff0000;
@@ -69,4 +65,6 @@ span.important {
 .submit {
   background: var(--header-button-color);
   color: var(--neutral-color);
+  padding: 10px 0px;
+  font-size: 18px;
 }

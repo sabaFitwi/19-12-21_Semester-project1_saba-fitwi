@@ -1,5 +1,5 @@
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.3) 50%),
+  background: var(--linear-gradient-banner),
     url(/images/get-involved/banner.jpg) center center no-repeat;
   background-size: cover;
   min-height: 70vh;
@@ -8,13 +8,16 @@
 
 .involvement__wrapper {
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 80px auto;
+  flex-direction: column;
+  gap: 30px;
+  margin: 100px auto;
 }
 .support img {
   height: 100px;
+}
+.support {
+  padding: 0 10%;
+  text-align: center;
 }
 h2.support__title {
   color: var(--header-button-color);
