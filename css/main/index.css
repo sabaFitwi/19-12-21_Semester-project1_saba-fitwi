@@ -127,7 +127,7 @@ p.news__date {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.news__card h4 {
+.news__card h3 {
   text-align: center;
   color: var(--header-button-color);
   margin: 0;
