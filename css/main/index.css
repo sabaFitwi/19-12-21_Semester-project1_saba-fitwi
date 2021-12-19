@@ -98,6 +98,9 @@ h3 {
   font-weight: 800;
   padding: 5px;
 }
+.news {
+  background: #fff1dc;
+}
 
 .news__card--wrapper {
   display: grid;
