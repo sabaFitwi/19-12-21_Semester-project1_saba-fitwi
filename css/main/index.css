@@ -9,16 +9,15 @@
   background-size: cover;
 }
 .bannerImage1 {
-  background: var(--linear-gradient-banner),
-    url(/images/home/1a.png) left center;
+  background: var(--linear-gradient-banner), url(/images/home/1a.png) center;
 }
 
 .bannerImage2 {
-  background: var(--linear-gradient-banner), url(/images/home/41.png) left;
+  background: var(--linear-gradient-banner), url(/images/home/41.png) center;
 }
 
-/* animation styles */
-@keyframes fadeIn {
+/*...... animation styles..... */
+@keyframes animation--fadeIn {
   0% {
     opacity: 0;
   }
@@ -33,8 +32,8 @@
   }
 }
 
-.fadeIn {
-  animation-name: fadeIn;
+.animation--fadeIn {
+  animation-name: animation--fadeIn;
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
