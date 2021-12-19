@@ -30,7 +30,7 @@
     url(/images/exhibition/19.png) center;
   background-size: cover;
   text-align: left;
-  height: 100vh;
+  height: 80vh;
 }
 .card p {
   color: white;
@@ -39,9 +39,9 @@
 }
 
 h3.card__title {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--neutral-color);
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 button.button-exshibit {
   padding-left: 40px;

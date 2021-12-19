@@ -17,8 +17,8 @@
 .explore__kids--wrapper,
 .explore__teacher--wrapper,
 .explore__research--wrapper p {
-  padding: 0 30px;
-  text-align: justify;
+  padding: 0px;
+  text-align: left;
 }
 .explore__kids--wrapper,
 .explore__teacher--wrapper,
@@ -28,18 +28,13 @@
   max-width: 100%;
   margin: 0px auto;
   gap: 10px;
-  padding: 40px;
+  padding: 0 30px;
 }
 h2.explor__h2 {
-  margin: 70px 0 0 0;
+  margin: 20px 0 10px 0;
 }
 .tablet_hidden--explore {
   display: none;
-}
-
-p {
-  color: var(--paragraph-text-color);
-  padding: 0;
 }
 
 #parallax1,

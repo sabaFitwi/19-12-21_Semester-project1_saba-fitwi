@@ -19,8 +19,17 @@
   .explore__teacher--wrapper,
   .explore__research--wrapper {
     grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
   }
-  /*......visit........*/
+  .explore__kids--wrapper,
+  .explore__teacher--wrapper,
+  .explore__research--wrapper p {
+    padding: 0 30px;
+  }
+  /*......exhibition........*/
+  h3.card__title {
+    font-size: 35px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -76,7 +85,7 @@
     order: 2;
   }
   h3.card__title {
-    font-size: 60px;
+    font-size: 50px;
   }
   .card p {
     font-size: 16px;
