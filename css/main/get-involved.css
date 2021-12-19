@@ -17,7 +17,7 @@
 }
 .support {
   padding: 0 10%;
-  text-align: center;
+  text-align: left;
 }
 h2.support__title {
   color: var(--header-button-color);

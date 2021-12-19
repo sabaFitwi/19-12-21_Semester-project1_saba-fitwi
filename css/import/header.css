@@ -61,7 +61,7 @@ nav li a {
 }
 .banner__content p {
   color: var(--neutral-color);
-  font-size: 12px;
+  font-size: 15px;
   margin: 0;
   margin-bottom: 20px;
   text-transform: capitalize;
