@@ -26,6 +26,12 @@ In this project i have created a community science website with the following pa
 
   fitwisaba@gmail.com
   
+  ## Lists to do 
+  
+  - adding javascript
+  - applying the comments that i get from the feedback.
+  
+  
 
   
  
